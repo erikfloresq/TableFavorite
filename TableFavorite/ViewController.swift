@@ -32,7 +32,8 @@ class ViewController: UIViewController {
     
 //MARK: - Custom Functions
     func getData(complete:()->Void) {
-        self.data = Dummy(generateData: .AllFalse).data
+        let dummyGenerate = Dummy(generateData: .Random)
+        self.data = dummyGenerate.data
         complete()
     }
     

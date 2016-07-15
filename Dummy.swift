@@ -26,10 +26,10 @@ struct Dummy {
                 
                 let tmpFavorite = Favorite()
                 if item%3 == 0 || item%5 == 0 {
-                    tmpFavorite.name = "Title True"
+                    tmpFavorite.name = "Title"
                     tmpFavorite.favorite = "true"
                 } else {
-                    tmpFavorite.name = "Title false"
+                    tmpFavorite.name = "Title"
                     tmpFavorite.favorite = "false"
                 }
                 self.data.append(tmpFavorite)
@@ -39,14 +39,14 @@ struct Dummy {
         case .AllTrue:
             for _ in 0..<20 {
                 let tmpFavorite = Favorite()
-                tmpFavorite.name = "Title True"
+                tmpFavorite.name = "Title"
                 tmpFavorite.favorite = "true"
                 self.data.append(tmpFavorite)
             }
         case .AllFalse:
             for _ in 0..<50 {
                 let tmpFavorite = Favorite()
-                tmpFavorite.name = "Title False"
+                tmpFavorite.name = "Title"
                 tmpFavorite.favorite = "false"
                 self.data.append(tmpFavorite)
             }
